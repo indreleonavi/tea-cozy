@@ -18,6 +18,7 @@ nav span {
   color: white;
 }
 
+
 /* Header */
 
 header {
@@ -45,4 +46,53 @@ header {
 
 header nav {
   padding-right: 10px;
+}
+
+/* Content */
+
+
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 69px;
+
+}
+
+.container {
+  position: relative;
+}
+
+#land-title, #land-subtitle {
+  background-color: black;
+}
+
+.land {
+  background: black;
+}
+
+h2 span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: seashell;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h4 span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: seashell;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 100px;
 }
