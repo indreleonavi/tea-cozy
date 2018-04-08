@@ -1,5 +1,11 @@
-body {
+
+html, body {
   margin: 0;
+  padding: 0;
+}
+
+body {
+
   font-family: "Helvetica";
   font-size: 22px;
   color: seashell;
@@ -11,12 +17,19 @@ a {
   color: seashell;
 }
 
+
 nav span {
+
   display: inline-block;
   padding: 20px 10px;
   text-decoration: underline;
   color: white;
 }
+
+.container {
+  margin 0 auto;
+}
+
 
 
 /* Header */
@@ -29,7 +42,10 @@ header {
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
-
+  background-color: black;
+  font-family: "Helvetica";
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .logo {
@@ -40,59 +56,167 @@ header {
 }
 
 .logo img {
-  width: auto;
+  width: 140px;
   height: 50px;
+  margin-right: 12px;
 }
 
 header nav {
-  padding-right: 10px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: flex-end;
 }
+
+
 
 /* Content */
 
-
-.landing {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  padding-top: 69px;
-
-}
-
-.container {
+main {
+  text-align: center;
   position: relative;
 }
 
-#land-title, #land-subtitle {
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  background-size: cover;
+  height: 700px;
+  width: 1200px;
+  margin: auto;
+}
+
+.text-wrapper {
+  display: inline-block;
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.text-wrapper h2 span, h4 span {
+  display: inline-block;
+  color: seashell;
+  font-family: "Helvetica";
+}
+
+
+
+/*Tea of the month section*/
+
+
+.cards {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: black;
 }
 
-.land {
-  background: black;
+.col {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
 }
 
-h2 span {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: seashell;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.col img {
+  width: 300px;
+  height: 200px;
 }
 
-h4 span {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+ .col h2 span, h4 span {
+  padding-top: 10px;
+
+}
+
+#teaofmonth  {
+  padding: 20px;
+  background-color: black;
   color: seashell;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 100px;
+  margin: 0;
+  text-align: center;
+}
+
+#sleeping  {
+  padding: 20px;
+  background-color: black;
+  color: seashell;
+  margin: 0;
+  text-align: center;
+}
+
+/*Locations section*/
+
+
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 1200px;
+  margin: auto;
+}
+
+.cards-location {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.col-location {
+  width: 300px;
+  height: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  padding-top: 15px;
+  margin: 40px;
+  background-color: black;
+  text-align: center;
+
+
+
+}
+
+.col-location h2, h3, p {
+  display: inline-block;
+  color: seashell;
+  font-family: "Helvetica";
+  opacity: 1;
+}
+
+
+/*Footer Section*/
+.footer {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 10px;
+
+}
+
+.footer h5 {
+  color: seashell;
+  font-size: 22px;
+}
+
+
+.footer p {
+  color: seashell;
+  font-size: 15px;
+}
+
+.copyright {
+
+text-align: left;
+font-size: 15px;
+color: seashell;
 }
